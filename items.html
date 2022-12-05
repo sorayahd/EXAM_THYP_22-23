@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
 
     <title>Items list</title>
+    <h1> Affichage des données du vocabulaire chercheur  </h1>
     <script src="https://d3js.org/d3.v7.min.js" ></script>
   </head>
   <body>
     <div id="main"></div>
   </body>
   <script>
-    d3.json("rt1.json").then(function (data) {
+    d3.json("items.json").then(function (data) {
       console.log(data);
       d3.select("#main")
         .selectAll("div")
